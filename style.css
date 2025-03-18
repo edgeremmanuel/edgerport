@@ -45,7 +45,7 @@ body{
     transform: scale(1.1);
 }
 .logo span{
-    text-shadow: var(--main-color);
+    text-shadow: 0 0 25px var(--main-color);
 }
 .navbar a{
     font-size: 1.8rem;
@@ -60,12 +60,46 @@ body{
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
 }
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--main-color);
+    display: none;
+}
 
-
-
-
-
-
-
+section{
+    min-height: 100hv;
+    padding: 10rem 12% 10rem;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+}
+span{
+    color: var(--main-color);
+}
+.logo span{
+    color: var(--main-color);
+}
+.home-content h3{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 3.5rem;
+}
+.home-content h1{
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
 
 
