@@ -16,11 +16,12 @@
 }
 html{
     font-size: 50%;
-    overflow: hidden;
+    overflow: auto;
 }
 body{
     background: var(--bg-color);
     color: var(--text-color);
+    overflow: auto;
 }
 .header{
     position: fixed;
