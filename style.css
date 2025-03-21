@@ -15,7 +15,7 @@
     --main-color:#00ffee;
 }
 html{
-    font-size: 60%;
+    font-size: 50%;
     overflow: hidden;
 }
 body{
@@ -27,13 +27,13 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 4rem 12% 4rem;
+    padding: 2rem 8% 2rem;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     text-align: center;
-    z-index: 5;
+    z-index: 3;
 }
 .logo{
     font-size: 3rem;
@@ -364,7 +364,7 @@ transition: 0.3s ease-in-out;
 }
 .service-box{
     background-color: var(--main-color);
-    height: 300px;
+    height: 200px;
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
