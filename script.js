@@ -5,7 +5,7 @@ let navLinks = document.querySelectorAll('header nav a');
 
 
 window.onscroll = () => {
-    sections.forEach(secc=> {
+    sections.forEach(sec=> {
         let top = window.scrollY;
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
@@ -25,6 +25,6 @@ window.onscroll = () => {
 
 
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
+    menuIcon.classList.toggle('bx bx-menu');
     navbar.classList.toggle('active');
 }

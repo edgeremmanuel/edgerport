@@ -105,14 +105,15 @@ span{
     line-height: 1;
 }
 .home-img{
-    border-radius: 50%;
+    text-align: left;
+    padding-left: 760px;
 }
 .home-img img{
-    align-items: right;
-    justify-items: right;
-    position: relative;
-    top: 3rem;
-    width: 20vw;
+    position: absolute;
+    top: 20rem;
+    height: auto;
+    display: inline-block;
+    width: 300px;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
      cursor: pointer; 
@@ -494,9 +495,9 @@ transition: 0.3s ease-in-out;
     font-size: 16px;
     color: #fff;
 }
-@media(max-width:1285px){
+@media(max-width:770px){
     html{
-        font-size: 55%;
+        font-size: 100%;
     }
     .service-container{
         padding-bottom: 7rem;
@@ -504,7 +505,7 @@ transition: 0.3s ease-in-out;
         margin: 0 5rem;
     }
 }
-@media(max-width:991px){
+@media(max-width:770px){
     header{
         padding: 2rem 3%;
     }
@@ -543,7 +544,7 @@ transition: 0.3s ease-in-out;
         position: absolute;
         top: 100%;
         right: 0;
-        width: 50%;
+        width: 100%;
         padding: 1rem 3%;
         background: rgba(0, 0, 0, 0.8);
         backdrop-filter: blur(20px);
@@ -566,10 +567,10 @@ transition: 0.3s ease-in-out;
         margin: 5rem 4rem;
     }
     .home-content h3{
-        font-size: 2.6rem;
+        font-size: 3.6rem;
     }
     .home-content h1{
-        font-size: 8rem;
+        font-size: 10rem;
         margin-top: 3rem;
     }
     .home-content p{
@@ -577,7 +578,7 @@ transition: 0.3s ease-in-out;
         margin: 0 auto;
     }
     .home-img img{
-        width: 56vw;
+        width: 66vw;
     }
     .Services h2{
         margin-bottom: 3rem;
