@@ -53,7 +53,7 @@ body{
     font-size: 2rem;
     color: var(--text-color);
     margin-left: 4rem;
-    font-weight: 500%;
+    font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
 }
@@ -159,7 +159,7 @@ transition: 0.3s ease-in-out;
     font-size: 1.6rem;
     color: black;
     border: 2px solid transparent;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.1rem;
     font-weight: 600;
     transition: 0.3s ease-in-out;
     cursor: pointer;
@@ -219,7 +219,7 @@ transition: 0.3s ease-in-out;
     }
     21%,
     40%{
-        content: "Web Designer";
+        content: "App & Web Designer";
     }
     41%,
     60%{
@@ -231,7 +231,7 @@ transition: 0.3s ease-in-out;
     }
     81%,
     100%{
-        content: "Software Tester";
+        content: "System & Database Management";
     }
 }
 @keyframes typing{
@@ -369,7 +369,7 @@ transition: 0.3s ease-in-out;
 }
 .service-box{
     background-color: var(--main-color);
-    height: 200px;
+    height: 300px;
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
@@ -436,7 +436,7 @@ transition: 0.3s ease-in-out;
     resize: none;
 }
 .contact form .btn{
-    margin: 2rem;
+    margin-top: 2rem;
 }
 .footer{
     position: relative;
@@ -473,7 +473,7 @@ transition: 0.3s ease-in-out;
     margin-top: 0;
     padding: 0;
     font-size: 18px;
-    line-height: 1.6px;
+    line-height: 1.6;
     margin-bottom: 0;
     text-align: center;
 }
