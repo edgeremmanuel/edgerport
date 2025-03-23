@@ -227,7 +227,7 @@ transition: 0.3s ease-in-out;
     }
     61%,
     80%{
-        content: "web Developer";
+        content: "APIs & Web Developer";
     }
     81%,
     100%{
@@ -266,7 +266,7 @@ transition: 0.3s ease-in-out;
 }
 .education{
     padding: 100px 15px;
-    background: var(--second-bg-color);
+    background: url(image/my\ logo.jpg) var(--second-bg-color);
 }
 .education h2{
     margin-bottom: 5rem;
@@ -408,6 +408,11 @@ transition: 0.3s ease-in-out;
 
 .contact{
     background-color: var(--bg-color);
+    background: url(image/IMG_20250316_183432_426.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
 }
 .contact h2{
     margin-bottom: 3rem;
