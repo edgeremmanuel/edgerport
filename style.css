@@ -416,7 +416,7 @@ transition: 0.3s ease-in-out;
 }
 .contact h2{
     margin-bottom: 3rem;
-    color: #fff;
+    color: black;
 }
 .contact form{
     display: flex;
