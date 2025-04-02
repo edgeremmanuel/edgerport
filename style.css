@@ -215,23 +215,23 @@ transition: 0.3s ease-in-out;
 @keyframes words{
     0%,
     20%{
-        content: "Frontend Designer";
+        content: "Frontend/Backend Designer";
     }
     21%,
     40%{
-        content: "App & Web Designer";
+        content: "App/Web Designer";
     }
     41%,
     60%{
-        content: "UI / UX Designer";
+        content: "UI/UX Designer";
     }
     61%,
     80%{
-        content: "APIs & Web Developer";
+        content: "APIs/Web Developer";
     }
     81%,
     100%{
-        content: "System & Database Management";
+        content: "System/Database Management";
     }
 }
 @keyframes typing{
