@@ -369,7 +369,7 @@ transition: 0.3s ease-in-out;
 }
 .service-box{
     background-color: var(--main-color);
-    height: 300px;
+    height: 310px;
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
