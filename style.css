@@ -49,6 +49,9 @@ body{
 .logo span{
     text-shadow: 0 0 25px var(--main-color);
 }
+.header.img{
+    size: 10px;
+}
 .navbar a{
     font-size: 2rem;
     color: var(--text-color);
