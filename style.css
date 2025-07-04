@@ -447,8 +447,8 @@ span {
 }
 .contact form .input-box input,
 .contact form textarea {
-    width: 48%; /* Adjusted width for two columns */
-    padding: 1.8rem; /* Adjusted padding */
+    width: 40%; /* Adjusted width for two columns */
+    padding: 1.5rem; /* Adjusted padding */
     font-size: 1.6rem; /* Adjusted font size */
     color: var(--text-color);
     background: var(--second-bg-color);
@@ -459,7 +459,7 @@ span {
 }
 .contact form textarea {
     width: 100%; /* Textarea takes full width */
-    min-height: 50px; /* Minimum height for textarea */
+    height: 200px; /* Minimum height for textarea */
 }
 .contact form .btn {
     padding-top: 20px;
@@ -468,6 +468,8 @@ span {
     padding: 1.2rem 3rem; /* Adjusted padding */
 }
 .footer {
+    margin-top: 280px;
+    height: 230px;
     position: relative;
     bottom: 0;
     width: 100%;
