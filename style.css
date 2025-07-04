@@ -269,6 +269,7 @@ span {
     background: var(--second-bg-color); /* Removed image from here as it might be problematic if not available */
     /* If you intend to have a background image, ensure the path is correct and it's suitable */
     /* background: url(image/my\ logo.jpg) var(--second-bg-color); */
+    background: url(image/my\ logo.jpg) var(--second-bg-color);
 }
 .education h2 {
     margin-bottom: 5rem;
@@ -414,7 +415,7 @@ span {
 }
 .contact {
     background-color: var(--bg-color);
-    background: url(../image/IMG_20250316_183432_426.jpg) no-repeat center center/cover; /* Corrected image path and combined properties */
+    background: url(image/IMG_20250316_183432_426.jpg); /* Corrected image path and combined properties */
     height: 100vh;
     display: flex; /* Use flexbox to center content */
     flex-direction: column;
