@@ -404,7 +404,7 @@ span {
     margin-bottom: 1rem; /* Added margin for separation */
 }
 .service-info p {
-    font-size: 1.5rem; /* Adjusted font size */
+    font-size: 2.5rem; /* Adjusted font size */
     font-weight: 600;
     margin: 0; /* Removed auto margin if not needed */
 }
@@ -460,7 +460,7 @@ span {
 }
 .contact form textarea {
     width: 100%; /* Textarea takes full width */
-    height: 200px; /* Minimum height for textarea */
+    height: 150px; /* Minimum height for textarea */
 }
 .contact form .btn {
     padding-top: 20px;
@@ -469,7 +469,8 @@ span {
     padding: 1.2rem 3rem; /* Adjusted padding */
 }
 .footer {
-    margin-top: 280px;
+    margin-top: 250px;
+    margin-bottom: 50px;
     height: 230px;
     position: relative;
     bottom: 0;
