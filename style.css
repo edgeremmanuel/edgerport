@@ -105,8 +105,7 @@ span {
     line-height: 1;
 }
 .home-img {
-    padding-top: 30pxpx;
-    text-align: center; /* Center the image within its container */
+    padding-top: 30px;
     padding-left: 0; /* Remove fixed padding, let flexbox handle positioning */
     flex: 1; /* Allow image container to take available space */
 }
@@ -421,7 +420,7 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 12%; /* Added padding for consistency */
+    padding: 0 15%; /* Added padding for consistency */
 }
 .contact h2 {
     margin-bottom: 3rem;
@@ -527,7 +526,7 @@ span {
 /* --- Media Queries --- */
 
 /* Large Desktops / Laptops */
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
     html {
         font-size: 90%;
     }
@@ -556,7 +555,7 @@ span {
 }
 
 /* Tablets (landscape) */
-@media (max-width: 1024px) {
+@media (max-width: 991px) {
     html {
         font-size: 80%;
     }
@@ -684,7 +683,7 @@ span {
 }
 
 /* Mobile Phones */
-@media (max-width: 480px) {
+@media (max-width: 450px) {
     html {
         font-size: 60%; /* Even smaller base font size */
     }
@@ -766,7 +765,7 @@ span {
 }
 
 /* Very Small Mobile Phones (e.g., iPhone SE) */
-@media (max-width: 320px) {
+@media (max-width: 360px) {
     html {
         font-size: 55%;
     }
