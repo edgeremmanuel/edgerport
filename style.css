@@ -423,6 +423,7 @@ span {
     padding: 0 15%; /* Added padding for consistency */
 }
 .contact h2 {
+    margin-top: 20rem;
     margin-bottom: 3rem;
     color: var(--text-color); /* Changed to text-color for better visibility on dark backgrounds */
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Added text shadow for visibility */
@@ -458,10 +459,11 @@ span {
 }
 .contact form textarea {
     width: 100%; /* Textarea takes full width */
-    min-height: 150px; /* Minimum height for textarea */
+    min-height: 50px; /* Minimum height for textarea */
 }
 .contact form .btn {
-    margin-top: 2rem;
+    padding-top: 20px;
+    margin-top: 20px;
     width: fit-content; /* Adjust button width to content */
     padding: 1.2rem 3rem; /* Adjusted padding */
 }
@@ -550,7 +552,7 @@ span {
         padding: 0 8%;
     }
     .contact {
-        padding: 0 8%;
+        padding: 0 10%;
     }
 }
 
