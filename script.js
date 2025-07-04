@@ -28,3 +28,28 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx bx-menu');
     navbar.classList.toggle('active');
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Get references to the menu icon and the navigation bar
+    const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.querySelector('.navbar');
+
+    // Check if both elements exist before adding the event listener
+    if (menuIcon && navbar) {
+        // Add a click event listener to the menu icon
+        menuIcon.addEventListener('click', () => {
+            // Toggle the 'active' class on the navbar
+            // This class, when present, will make the navbar visible as per your CSS
+            navbar.classList.toggle('active');
+
+            // Optional: If you have an icon library like Boxicons (e.g., 'bx bx-menu' and 'bx bx-x')
+            // you can also toggle the icon itself to indicate the menu state.
+            // For example, if your menu icon starts with 'bx bx-menu':
+            // menuIcon.classList.toggle('bx-x');
+            // menuIcon.classList.toggle('bx-menu');
+        });
+    } else {
+        // Log a warning if elements are not found, useful for debugging
+        console.warn('Menu icon or navbar element not found. Ensure IDs/classes are correct.');
+    }
+});

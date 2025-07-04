@@ -37,9 +37,9 @@ body {
     z-index: 5;
 }
 .logo {
-    font-size: 3.5rem; /* Adjusted for better scaling */
+    font-size: 3rem; /* Adjusted for better scaling */
     color: var(--text-color);
-    font-weight: 800;
+    font-weight: 600;
     cursor: pointer;
     transition: 0.3s ease;
 }
