@@ -28,7 +28,7 @@ body {
     left: 0;
     width: 100%; /* Changed from 50% for full width */
     height: auto; /* Changed from 20% to auto for content */
-    padding: 2rem 12% 2rem; /* Adjusted padding for better responsiveness */
+    padding: 3rem 12% 3rem; /* Adjusted padding for better responsiveness */
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     display: flex;
@@ -105,6 +105,7 @@ span {
     line-height: 1;
 }
 .home-img {
+    padding-top: 30pxpx;
     text-align: center; /* Center the image within its container */
     padding-left: 0; /* Remove fixed padding, let flexbox handle positioning */
     flex: 1; /* Allow image container to take available space */
@@ -114,8 +115,8 @@ span {
     top: auto; /* Remove fixed top positioning */
     height: auto;
     display: block; /* Make image a block element */
-    margin: 0 auto; /* Center image horizontally */
-    width: 300px;
+    margin: 5px auto; /* Center image horizontally */
+    width: 200px;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
