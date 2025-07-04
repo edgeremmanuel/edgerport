@@ -1,6 +1,5 @@
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     border: none;
@@ -8,153 +7,150 @@
     scroll-behavior: smooth;
     font-family: "poppins", sans-serif;
 }
-:root{
-    --bg-color:#080808;
-    --second-bg-color:#131313;
-    --text-color:#fff;
-    --main-color:#00ffee;
+:root {
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: #fff;
+    --main-color: #00ffee;
 }
-html{
-    font-size: 50%;
-    overflow: auto;
+html {
+    font-size: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrollbar from overflowing content */
 }
-body{
+body {
     background: var(--bg-color);
     color: var(--text-color);
-    overflow: auto;
+    overflow-x: hidden; /* Prevent horizontal scrollbar from overflowing content */
 }
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 20%;
-    padding: 4rem 12% 4rem;
+    width: 100%; /* Changed from 50% for full width */
+    height: auto; /* Changed from 20% to auto for content */
+    padding: 2rem 12% 2rem; /* Adjusted padding for better responsiveness */
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    align-items: center; /* Vertically align items in header */
     z-index: 5;
 }
-.logo{
-    font-size: 4rem;
+.logo {
+    font-size: 3.5rem; /* Adjusted for better scaling */
     color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
     transition: 0.3s ease;
 }
-.logo:hover{
+.logo:hover {
     transform: scale(1.1);
 }
-.logo span{
+.logo span {
     text-shadow: 0 0 25px var(--main-color);
 }
-.header.img{
-    size: 10px;
-}
-.navbar a{
-    font-size: 2rem;
+/* .header.img { size: 10px; } - This selector is problematic. If it's for an image within the header, it should be .header img */
+.navbar a {
+    font-size: 1.8rem; /* Adjusted for better scaling */
     color: var(--text-color);
-    margin-left: 4rem;
+    margin-left: 3rem; /* Adjusted margin */
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
 }
 .navbar a:hover,
-.navbar a.active{
+.navbar a.active {
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
 }
-#menu-icon{
+#menu-icon {
     font-size: 3.6rem;
     color: var(--main-color);
-    display:none;
+    display: none;
+    cursor: pointer; /* Added cursor for better UX */
 }
-
-section{
-    min-height: 100vh;
-    padding: 10rem 12% 10rem;
-}
-.home{
+.home {
     margin-top: 12rem;
     display: flex;
     align-items: center;
-    justify-content: left;
-    gap: 15rem;
+    justify-content: center; /* Centered content */
+    gap: 5rem; /* Reduced gap for better layout */
+    padding: 0 12%; /* Added horizontal padding */
+    min-height: 100vh; /* Ensure home section takes full viewport height */
 }
-.home-content{
+.home-content {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: flex-start; /* Align text to the start */
     text-align: left;
     justify-content: center;
     margin-top: 3rem;
+    flex: 1; /* Allow content to take available space */
 }
-span{
+span {
     color: var(--main-color);
 }
-.logo span{
+.logo span {
     color: var(--main-color);
 }
-.home-content h3{
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-    font-size: 4.5rem;
+.home-content h3 {
+    margin-bottom: 1rem; /* Adjusted margin */
+    margin-top: 0.5rem; /* Adjusted margin */
+    font-size: 3.5rem; /* Adjusted font size */
 }
-.home-content h1{
-    font-size: 7rem;
+.home-content h1 {
+    font-size: 6rem; /* Adjusted font size */
     font-weight: 700;
-    margin-top: 1.5rem;
+    margin-top: 1rem; /* Adjusted margin */
     line-height: 1;
 }
-.home-img{
-    text-align: left;
-    padding-left: 760px;
+.home-img {
+    text-align: center; /* Center the image within its container */
+    padding-left: 0; /* Remove fixed padding, let flexbox handle positioning */
+    flex: 1; /* Allow image container to take available space */
 }
-.home-img img{
-    position: absolute;
-    top: 20rem;
+.home-img img {
+    position: relative; /* Changed from absolute to relative for better flow */
+    top: auto; /* Remove fixed top positioning */
     height: auto;
-    display: inline-block;
+    display: block; /* Make image a block element */
+    margin: 0 auto; /* Center image horizontally */
     width: 300px;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
-     cursor: pointer; 
-     transition: 0.4s ease-in-out;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
 }
-.home-img img:hover{
-    box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color),
-                0 0 100px var(--main-color)
+.home-img img:hover {
+    box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color), 0 0 100px var(--main-color);
 }
-.home-content p{
-    font-size: 2rem;
+.home-content p {
+    font-size: 1.8rem; /* Adjusted font size */
     font-weight: 500;
     line-height: 1.8;
-    max-width: 1000px;
+    max-width: 800px; /* Adjusted max-width */
 }
-.social-icons a{
-display: inline-flex;
-justify-content: center;
-align-items: center;
-width: 4.5rem;
-height: 4.5rem;
-background: transparent;
-border: 2px solid var(--main-color);
-font-size: 2.5rem;
-border-radius: 50%;
-color: var(--main-color);
-margin: 3rem 1.5rem 3rem 0;
-transition: 0.3s ease-in-out; 
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease-in-out;
 }
-.social-icons a:hover{
+.social-icons a:hover {
     color: var(--text-color);
     transform: scale(1.3) translateY(-5px);
     box-shadow: 0 0 25px var(--main-color);
     background-color: var(--main-color);
 }
-.btn{
+.btn {
     display: inline-block;
     padding: 1rem 2.8rem;
     background: var(--main-color);
@@ -168,40 +164,40 @@ transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
-.btn:hover{
+.btn:hover {
     transform: scale(1.05);
     box-shadow: 0 0 50px var(--main-color);
 }
-.btn-group{
+.btn-group {
     display: flex;
     align-items: center;
     gap: 1.5rem;
 }
-.btn-group a:nth-of-type(2){
+.btn-group a:nth-of-type(2) {
     background-color: black;
     color: var(--main-color);
     border: 2px solid var(--main-color);
     box-shadow: 0 0 25px transparent;
 }
-.btn-group a:nth-of-type(2):hover{
+.btn-group a:nth-of-type(2):hover {
     box-shadow: 0 0 25px var(--main-color);
     background-color: var(--main-color);
     color: black;
 }
-.text-animation{
+.text-animation {
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
 }
-.text-animation span{
+.text-animation span {
     position: relative;
 }
-.text-animation span::before{
+.text-animation span::before {
     content: "Web Developer";
     color: var(--main-color);
     animation: words 20s infinite;
 }
-.text-animation span::after{
+.text-animation span::after {
     content: "";
     background-color: var(--bg-color);
     position: absolute;
@@ -211,34 +207,34 @@ transition: 0.3s ease-in-out;
     right: -8px;
     animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
-@keyframes cursor{
-    to{
+@keyframes cursor {
+    to {
         border-left: 2px solid var(--main-color);
     }
 }
-@keyframes words{
+@keyframes words {
     0%,
-    20%{
+    20% {
         content: "Frontend&Backend Designer";
     }
     21%,
-    40%{
+    40% {
         content: "App&Web Designer";
     }
     41%,
-    60%{
+    60% {
         content: "UI&UX Designer";
     }
     61%,
-    80%{
+    80% {
         content: "APIs&Web Developer";
     }
     81%,
-    100%{
+    100% {
         content: "System&Database Management";
     }
 }
-@keyframes typing{
+@keyframes typing {
     10%,
     15%,
     30%,
@@ -248,7 +244,7 @@ transition: 0.3s ease-in-out;
     70%,
     75%,
     90%,
-    95%{
+    95% {
         width: 0;
     }
     5%,
@@ -259,30 +255,32 @@ transition: 0.3s ease-in-out;
     60%,
     65%,
     80%,
-    85%{
-        width: calc(100% 8px);
+    85% {
+        width: calc(100% + 8px); /* Corrected missing operator */
     }
 }
-.heading{
+.heading {
     font-size: 8rem;
     text-align: center;
     margin: 5rem 0;
 }
-.education{
+.education {
     padding: 100px 15px;
-    background: url(image/my\ logo.jpg) var(--second-bg-color);
+    background: var(--second-bg-color); /* Removed image from here as it might be problematic if not available */
+    /* If you intend to have a background image, ensure the path is correct and it's suitable */
+    /* background: url(image/my\ logo.jpg) var(--second-bg-color); */
 }
-.education h2{
+.education h2 {
     margin-bottom: 5rem;
 }
-.timeline-items{
+.timeline-items {
     max-width: 1200px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     position: relative;
 }
-.timeline-items::before{
+.timeline-items::before {
     content: "";
     position: absolute;
     width: 5px;
@@ -290,39 +288,38 @@ transition: 0.3s ease-in-out;
     background-color: var(--main-color);
     left: calc(50% - 1px);
 }
-.timeline-item{
+.timeline-item {
     margin-bottom: 40px;
     width: 100%;
     position: relative;
 }
-.timeline-item:last-child{
+.timeline-item:last-child {
     margin-bottom: 0;
 }
-.timeline-item:nth-child(odd){
+.timeline-item:nth-child(odd) {
     padding-right: calc(50% + 30px);
     text-align: right;
 }
-.timeline-item:nth-child(even){
+.timeline-item:nth-child(even) {
     padding-left: calc(50% + 30px);
 }
-.timeline-dot{
+.timeline-dot {
     height: 21px;
     width: 21px;
     background-color: var(--main-color);
-    box-shadow: 0 0 25px var(--main-color),
-                0 0 50px  var(--main-color);
+    box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
     position: absolute;
     left: calc(50% - 8px);
     border-radius: 50%;
-    top:10px
+    top: 10px;
 }
-.timeline-date{
+.timeline-date {
     font-size: 20px;
     font-weight: 800;
     color: #fff;
     margin: 6px 0 15px;
 }
-.timeline-content{
+.timeline-content {
     background-color: var(--bg-color);
     border: 3px solid var(--main-color);
     padding: 30px 50px;
@@ -330,139 +327,157 @@ transition: 0.3s ease-in-out;
     box-shadow: 0 0 10px var(--main-color);
     transition: 0.3s ease-in-out;
 }
-.timeline-content:hover{
+.timeline-content:hover {
     transform: scale(1.05);
     box-shadow: 0 0 25px var(--main-color);
 }
-.timeline-content h3{
+.timeline-content h3 {
     font-size: 20px;
     color: #fff;
     margin: 0 0 10px;
     font-weight: 500;
 }
-.timeline-content p{
+.timeline-content p {
     color: #fff;
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
 }
-
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 15px;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: var(--main-color);
 }
-::-webkit-scrollbar-track{
-    background-color: var(--main-color);
-    width: 50px;
+::-webkit-scrollbar-track {
+    background-color: var(--second-bg-color); /* Changed to second-bg-color for contrast */
 }
-.Services{
+.Services {
     background: var(--bg-color);
-    color: black;
+    color: black; /* This color will only apply to elements that inherit it if not explicitly set elsewhere */
+    padding: 100px 15px; /* Added padding for section */
 }
-.Services h2{
+.Services h2 {
     margin-bottom: 5rem;
     color: #fff;
 }
-.service-container{
+.service-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Improved for responsiveness */
     align-items: center;
     gap: 2.5rem;
+    padding: 0 12%; /* Added horizontal padding */
 }
-.service-box{
+.service-box {
     background-color: var(--main-color);
-    height: 310px;
+    height: auto; /* Adjusted to auto for content flexibility */
+    padding: 3rem; /* Added padding to the box */
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
     transition: 0.4s ease-in-out;
+    display: flex; /* Added flexbox for internal content */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-.service-box:hover{
+.service-box:hover {
     background: #fff;
     color: black;
-    border: 5px solid  var(--main-color);
+    border: 5px solid var(--main-color);
     transform: scale(1.03);
 }
-.service-box.service-info{
+.service-info { /* Corrected this to be a standalone class, assuming it's applied to content inside .service-box */
     display: flex;
     flex-direction: column;
     text-align: center;
-    max-height: 200px;
-    justify-content: left;
-    align-items: baseline;
-    padding: 5rem 5rem;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 0; /* Remove redundant padding if applied to inner content */
 }
-.service-info h4{
+.service-info h4 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem; /* Adjusted font size */
     font-weight: 800;
-    line-height: 2;
+    line-height: 1.5; /* Adjusted line height */
+    margin-bottom: 1rem; /* Added margin for separation */
 }
-.service-info p{
-    font-size: 2rem;
+.service-info p {
+    font-size: 1.5rem; /* Adjusted font size */
     font-weight: 600;
-    margin: auto;
+    margin: 0; /* Removed auto margin if not needed */
 }
-.service-info img{
-    height: 190px;
-    padding-left: 100px;
+.service-info img {
+    height: 150px; /* Adjusted image height */
+    padding-left: 0; /* Remove specific padding, center with flexbox */
+    margin-bottom: 1.5rem; /* Add some space below the image */
 }
-
-.contact{
+.contact {
     background-color: var(--bg-color);
-    background: url(image/IMG_20250316_183432_426.jpg);
-    background-size: cover;
-    background-position: center;
+    background: url(../image/IMG_20250316_183432_426.jpg) no-repeat center center/cover; /* Corrected image path and combined properties */
     height: 100vh;
-    background-repeat: no-repeat;
-}
-.contact h2{
-    margin-bottom: 3rem;
-    color: black;
-}
-.contact form{
-    display: flex;
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    margin: 5rem auto;
-    text-align: center;
+    padding: 0 12%; /* Added padding for consistency */
 }
-.contact form .input-box{
+.contact h2 {
+    margin-bottom: 3rem;
+    color: var(--text-color); /* Changed to text-color for better visibility on dark backgrounds */
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Added text shadow for visibility */
+}
+.contact form {
     display: flex;
+    flex-direction: column; /* Changed to column for better stacking on smaller screens */
+    align-items: center; /* Center items in the form */
     justify-content: center;
+    gap: 2rem; /* Adjusted gap */
+    margin: 3rem auto; /* Adjusted margin */
+    width: 100%;
+    max-width: 700px; /* Max width for the form */
+}
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between; /* Space out input fields */
     flex-wrap: wrap;
+    width: 100%;
+    gap: 1.5rem; /* Gap between inputs in the box */
 }
 .contact form .input-box input,
-.contact form textarea{
-    width: 100%;
-    padding: 2.5rem;
-    font-size: 1.8rem;
+.contact form textarea {
+    width: 48%; /* Adjusted width for two columns */
+    padding: 1.8rem; /* Adjusted padding */
+    font-size: 1.6rem; /* Adjusted font size */
     color: var(--text-color);
     background: var(--second-bg-color);
-    border-radius: 2rem;
+    border-radius: 1rem; /* Adjusted border-radius */
     border: 2px solid var(--main-color);
-    margin: 1.5rem 0;
-    resize: none;
+    margin: 0; /* Removed vertical margin from individual inputs */
+    resize: vertical; /* Allow vertical resizing for textarea */
 }
-.contact form .btn{
+.contact form textarea {
+    width: 100%; /* Textarea takes full width */
+    min-height: 150px; /* Minimum height for textarea */
+}
+.contact form .btn {
     margin-top: 2rem;
+    width: fit-content; /* Adjust button width to content */
+    padding: 1.2rem 3rem; /* Adjusted padding */
 }
-.footer{
+.footer {
     position: relative;
     bottom: 0;
     width: 100%;
     padding: 40px 0;
     background-color: var(--second-bg-color);
 }
-.footer .social{
+.footer .social {
     text-align: center;
     padding-bottom: 25px;
     color: var(--main-color);
 }
-.footer .social a{
+.footer .social a {
     font-size: 25px;
     color: var(--main-color);
     border: 2px solid var(--main-color);
@@ -475,13 +490,13 @@ transition: 0.3s ease-in-out;
     margin: 0 10px;
     transition: 0.3s ease-in-out;
 }
-.footer .social a:hover{
-    transform: scale(1.2)translateY(-10px);
+.footer .social a:hover {
+    transform: scale(1.2) translateY(-10px);
     background-color: var(--main-color);
     color: black;
     box-shadow: 0 0 25px var(--main-color);
 }
-.footer ul{
+.footer ul {
     margin-top: 0;
     padding: 0;
     font-size: 18px;
@@ -489,70 +504,114 @@ transition: 0.3s ease-in-out;
     margin-bottom: 0;
     text-align: center;
 }
-.footer ul li a{
+.footer ul li a {
     color: #fff;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease-in-out;
 }
-.footer ul li a:hover{
+.footer ul li a:hover {
     border-bottom: 3px solid var(--main-color);
 }
-.footer ul li{
+.footer ul li {
     display: inline-block;
     padding: 0 15px;
 }
-.footer .copyright{
+.footer .copyright {
     margin-top: 50px;
     text-align: center;
     font-size: 16px;
     color: #fff;
 }
-@media(max-width:770px){
-    html{
-        font-size: 100%;
+
+/* --- Media Queries --- */
+
+/* Large Desktops / Laptops */
+@media (max-width: 1440px) {
+    html {
+        font-size: 90%;
     }
-    .service-container{
-        padding-bottom: 7rem;
-        grid-template-columns: repeat(2,1fr);
-        margin: 0 5rem;
+    .header {
+        padding: 2rem 8% 2rem;
+    }
+    .home {
+        gap: 3rem;
+        padding: 0 8%;
+    }
+    .home-content h1 {
+        font-size: 5rem;
+    }
+    .home-content h3 {
+        font-size: 3rem;
+    }
+    .home-content p {
+        font-size: 1.6rem;
+    }
+    .service-container {
+        padding: 0 8%;
+    }
+    .contact {
+        padding: 0 8%;
     }
 }
-@media(max-width:770px){
-    header{
-        padding: 2rem 3%;
+
+/* Tablets (landscape) */
+@media (max-width: 1024px) {
+    html {
+        font-size: 80%;
     }
-    section{
-        padding: 10rem 3% 2rem;
+    .header {
+        padding: 2rem 5% 2rem;
     }
-    .timeline-items::before{
-        left: 7px;
+    .navbar a {
+        margin-left: 2rem;
     }
-    .timeline-item:nth-child(odd){
+    .home {
+        flex-direction: column-reverse; /* Stack home content */
+        text-align: center;
+        padding: 5rem 5% 2rem; /* Adjusted padding */
+        margin-top: 8rem; /* Adjust top margin for header */
+    }
+    .home-content {
+        align-items: center; /* Center content when stacked */
+        text-align: center;
+    }
+    .home-img img {
+        width: 250px; /* Slightly smaller image */
+        margin-bottom: 3rem;
+    }
+    .heading {
+        font-size: 6rem;
+    }
+    .timeline-items::before {
+        left: 20px; /* Adjust timeline bar position */
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 50px; /* Adjust padding for both sides */
         padding-right: 0;
         text-align: left;
     }
-    .timeline-item:nth-child(odd),
-    .timeline-item:nth-child(even){
-        padding-left: 37px;
+    .timeline-dot {
+        left: 14px; /* Adjust dot position */
     }
-    .timeline-dot{
-        left: 0;
+    .service-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjust min-width */
+        padding: 0 5%;
     }
-    .Services{
-        padding-bottom: 7rem;
-    }
-    .contact form{
-        flex-direction: column;
-    }
-    .footer{
-        padding: 2rem 3%;
+    .contact form .input-box input {
+        width: 100%; /* Stack inputs on smaller tablets */
     }
 }
-@media(max-width:895){
-    #menu-icon{
-        display: block;
+
+/* Small Tablets / Large Mobile Phones (portrait) */
+@media (max-width: 768px) {
+    html {
+        font-size: 70%;
     }
-    .navbar{
+    #menu-icon {
+        display: block; /* Show menu icon */
+    }
+    .navbar {
         position: absolute;
         top: 100%;
         right: 0;
@@ -563,39 +622,216 @@ transition: 0.3s ease-in-out;
         border-bottom-left-radius: 2rem;
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
-        display: none;
+        display: none; /* Hidden by default */
+        flex-direction: column; /* Stack navbar links */
+        align-items: center;
     }
-    .navbar.active{
-        display: block;
+    .navbar.active {
+        display: flex; /* Show when active */
     }
-    .navbar a{
-        display: block;
-        font-size: 2rem;
+    .navbar a {
+        margin: 1.5rem 0; /* Adjust margin for stacked links */
+        font-size: 1.8rem;
+    }
+    .home {
+        margin-top: 6rem; /* Further adjust top margin */
+        padding: 3rem 3% 2rem;
+    }
+    .home-content h1 {
+        font-size: 4rem;
+    }
+    .home-content h3 {
+        font-size: 2.5rem;
+    }
+    .home-img img {
+        width: 200px;
+        margin-bottom: 2rem;
+    }
+    .heading {
+        font-size: 5rem;
         margin: 3rem 0;
-        color: #fff;
     }
-    .home{
-        flex-direction: column-reverse;
-        margin: 5rem 4rem;
+    .timeline-items::before {
+        left: 10px;
     }
-    .home-content h3{
-        font-size: 3.6rem;
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 30px;
     }
-    .home-content h1{
-        font-size: 10rem;
-        margin-top: 3rem;
+    .timeline-dot {
+        left: 4px;
     }
-    .home-content p{
-        max-width: 600px;
-        margin: 0 auto;
+    .service-container {
+        grid-template-columns: 1fr; /* Single column layout for services */
+        padding: 0 3%;
     }
-    .home-img img{
-        width: 66vw;
+    .service-box {
+        padding: 2rem;
     }
-    .Services h2{
-        margin-bottom: 3rem;
+    .service-info h4 {
+        font-size: 2rem;
     }
-    .service-container{
-        grid-template-columns: repeat(1,1fr);
+    .service-info p {
+        font-size: 1.2rem;
+    }
+    .contact form {
+        padding: 0 3%;
+    }
+    .contact form .input-box input {
+        width: 100%;
     }
 }
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    html {
+        font-size: 60%; /* Even smaller base font size */
+    }
+    .header {
+        padding: 1.5rem 3%;
+    }
+    .logo {
+        font-size: 3rem;
+    }
+    .home {
+        padding: 2rem 3% 1rem;
+    }
+    .home-content h1 {
+        font-size: 3.5rem;
+    }
+    .home-content h3 {
+        font-size: 2rem;
+    }
+    .home-content p {
+        font-size: 1.4rem;
+    }
+    .social-icons a {
+        width: 4rem;
+        height: 4rem;
+        font-size: 2rem;
+        margin: 2rem 1rem 2rem 0;
+    }
+    .btn {
+        padding: 0.8rem 2rem;
+        font-size: 1.4rem;
+    }
+    .heading {
+        font-size: 4rem;
+        margin: 2.5rem 0;
+    }
+    .timeline-content {
+        padding: 20px 30px;
+        border-radius: 2rem;
+    }
+    .timeline-content h3 {
+        font-size: 1.8rem;
+    }
+    .timeline-content p {
+        font-size: 1.4rem;
+    }
+    .service-box {
+        padding: 1.5rem;
+    }
+    .service-info h4 {
+        font-size: 1.8rem;
+    }
+    .service-info p {
+        font-size: 1.1rem;
+    }
+    .service-info img {
+        height: 120px;
+    }
+    .contact form .input-box input,
+    .contact form textarea {
+        padding: 1.5rem;
+        font-size: 1.4rem;
+    }
+    .footer ul li {
+        padding: 0 10px;
+    }
+    .footer ul li a {
+        font-size: 1.6rem;
+    }
+    .footer .social a {
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 22px;
+    }
+    .footer .copyright {
+        margin-top: 30px;
+        font-size: 14px;
+    }
+}
+
+/* Very Small Mobile Phones (e.g., iPhone SE) */
+@media (max-width: 320px) {
+    html {
+        font-size: 55%;
+    }
+    .logo {
+        font-size: 2.5rem;
+    }
+    .home-content h1 {
+        font-size: 3rem;
+    }
+    .home-content h3 {
+        font-size: 1.8rem;
+    }
+    .home-content p {
+        font-size: 1.2rem;
+    }
+    .social-icons a {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.8rem;
+        margin: 1.5rem 0.8rem 1.5rem 0;
+    }
+    .btn {
+        padding: 0.7rem 1.8rem;
+        font-size: 1.2rem;
+    }
+    .heading {
+        font-size: 3.5rem;
+    }
+    .timeline-content {
+        padding: 15px 20px;
+    }
+    .service-box {
+        padding: 1rem;
+    }
+    .service-info h4 {
+        font-size: 1.6rem;
+    }
+    .service-info p {
+        font-size: 1rem;
+    }
+    .service-info img {
+        height: 100px;
+    }
+    .contact form .input-box input,
+    .contact form textarea {
+        padding: 1.2rem;
+        font-size: 1.2rem;
+    }
+    .contact form .btn {
+        padding: 1rem 2rem;
+    }
+    .footer ul li {
+        padding: 0 8px;
+    }
+    .footer ul li a {
+        font-size: 1.4rem;
+    }
+    .footer .social a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 20px;
+    }
+    .footer .copyright {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+}
+
