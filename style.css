@@ -266,6 +266,7 @@ span {
     margin: 5rem 0;
 }
 .education {
+    margin-top: 20px;
     padding: 100px 15px;
     background: var(--second-bg-color); /* Removed image from here as it might be problematic if not available */
     /* If you intend to have a background image, ensure the path is correct and it's suitable */
@@ -405,7 +406,7 @@ span {
     margin-bottom: 1rem; /* Added margin for separation */
 }
 .service-info p {
-    font-size: 2.5rem; /* Adjusted font size */
+    font-size: 1.5rem; /* Adjusted font size */
     font-weight: 600;
     margin: 0; /* Removed auto margin if not needed */
 }
@@ -471,13 +472,13 @@ span {
 }
 .footer {
     margin-top: 250px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     height: 230px;
     position: relative;
     bottom: 0;
     width: 100%;
     padding: 40px 0;
-    background-color: var(--second-bg-color);
+    background: #efefef;
 }
 .footer .social {
     text-align: center;
@@ -511,8 +512,16 @@ span {
     margin-bottom: 0;
     text-align: center;
 }
+.footer-img{
+    max-width: 400px;
+    opacity: 0.3;
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
 .footer ul li a {
-    color: #fff;
+    color: #110101;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease-in-out;
 }
@@ -524,10 +533,11 @@ span {
     padding: 0 15px;
 }
 .footer .copyright {
+    font-weight: 500;
     margin-top: 50px;
     text-align: center;
-    font-size: 16px;
-    color: #fff;
+    font-size: 20px;
+    color: #140303;
 }
 
 /* --- Media Queries --- */
