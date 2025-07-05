@@ -210,7 +210,7 @@ span {
 }
 @keyframes cursor {
     to {
-        border-left: 2px solid var(--main-color);
+        border-left: 1px solid var(--main-color);
     }
 }
 @keyframes words {
@@ -257,7 +257,7 @@ span {
     65%,
     80%,
     85% {
-        width: calc(100% + 8px); /* Corrected missing operator */
+        width: calc(100% + 5px); /* Corrected missing operator */
     }
 }
 .heading {
@@ -594,7 +594,7 @@ span {
         text-align: center;
     }
     .home-content p{
-        font-size: 80px;
+        font-size: 2rem;
     }
     .home-img img {
         width: 250px; /* Slightly smaller image */
@@ -652,7 +652,7 @@ span {
     }
     .navbar a {
         margin: 1.5rem 0; /* Adjust margin for stacked links */
-        font-size: 1.8rem;
+        font-size: 2.5rem;
     }
     .home {
         margin-top: 6rem; /* Further adjust top margin */
@@ -662,12 +662,15 @@ span {
         font-size: 4rem;
     }
     .home-content h3 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
     .home-img img {
         width: 200px;
         margin-bottom: 2rem;
     }
+     .home-content p{
+        font-size: 1.4rem;
+     } 
     .heading {
         font-size: 5rem;
         margin: 3rem 0;
@@ -724,7 +727,7 @@ span {
         font-size: 2rem;
     }
     .home-content p {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
     .social-icons a {
         width: 4rem;
