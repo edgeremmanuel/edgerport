@@ -362,7 +362,7 @@ span {
 }
 .Services h2 {
     margin-bottom: 5rem;
-    color: #fff;
+    color: var(--bg-color);
 }
 .service-container {
     display: grid;
@@ -383,10 +383,11 @@ span {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    color: #080808;
 }
 .service-box:hover {
-    background: #fff;
-    color: black;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     border: 5px solid var(--main-color);
     transform: scale(1.03);
 }
@@ -534,7 +535,7 @@ span {
 }
 .footer .copyright {
     font-weight: 500;
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
     font-size: 20px;
     color: #140303;
@@ -574,7 +575,7 @@ span {
 /* Tablets (landscape) */
 @media (max-width: 991px) {
     html {
-        font-size: 80%;
+        font-size: 100%;
     }
     .header {
         padding: 2rem 5% 2rem;
@@ -591,6 +592,9 @@ span {
     .home-content {
         align-items: center; /* Center content when stacked */
         text-align: center;
+    }
+    .home-content p{
+        font-size: 80px;
     }
     .home-img img {
         width: 250px; /* Slightly smaller image */
@@ -689,7 +693,7 @@ span {
         font-size: 2rem;
     }
     .service-info p {
-        font-size: 1.2rem;
+        font-size: 2.5rem;
     }
     .contact form {
         padding: 0 3%;
@@ -753,7 +757,7 @@ span {
         font-size: 1.8rem;
     }
     .service-info p {
-        font-size: 1.1rem;
+        font-size: 2.5rem;
     }
     .service-info img {
         height: 120px;
@@ -763,6 +767,10 @@ span {
         padding: 1.5rem;
         font-size: 1.4rem;
     }
+     .footer{
+        margin-top: 40px;
+        height: auto;
+    } 
     .footer ul li {
         padding: 0 10px;
     }
@@ -781,7 +789,7 @@ span {
     }
 }
 
-/* Very Small Mobile Phones (e.g., iPhone SE) */
+/* Very Small Mobile Phones (e.g., iPhone SE, Pixel 1) */
 @media (max-width: 360px) {
     html {
         font-size: 55%;
@@ -821,10 +829,10 @@ span {
         font-size: 1.6rem;
     }
     .service-info p {
-        font-size: 1rem;
+        font-size: 1.8rem;
     }
     .service-info img {
-        height: 100px;
+        height: 110px;
     }
     .contact form .input-box input,
     .contact form textarea {
@@ -834,6 +842,10 @@ span {
     .contact form .btn {
         padding: 1rem 2rem;
     }
+    .footer{
+        margin-top: 40px;
+        height: auto;
+    } 
     .footer ul li {
         padding: 0 8px;
     }
@@ -849,6 +861,7 @@ span {
     .footer .copyright {
         margin-top: 20px;
         font-size: 12px;
+        margin-bottom: 5px;
     }
 }
 
