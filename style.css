@@ -27,7 +27,7 @@ body {
     top: 0;
     left: 0;
     width: 100%; /* Changed from 50% for full width */
-    height: auto; /* Changed from 20% to auto for content */
+    height: 10%; /* Changed from 20% to auto for content */
     padding: 3rem 12% 3rem; /* Adjusted padding for better responsiveness */
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
