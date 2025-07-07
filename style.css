@@ -105,11 +105,10 @@ span {
     line-height: 1;
 }
 .home-img {
-    position: absolute; /* Changed from absolute to relative for better flow */
+    position: relative; /* Changed from absolute to relative for better flow */
     margin: auto;
     flex-basis: 50%;
-    padding-left: 810px; /* Remove fixed padding, let flexbox handle positioning */
-    flex: 1; /* Allow image container to take available space */
+    padding: flex /* Remove fixed padding, let flexbox handle positioning */
 }
 .home-img img {
     top: auto; /* Remove fixed top positioning */
@@ -667,8 +666,11 @@ span {
     .home-content h3 {
         font-size: 1.5rem;
     }
+    .home-img {
+         position: relative;
+    }
     .home-img img {
-        width: 150px;
+        width: 110px;
         margin-bottom: 2rem;
     }
      .home-content p{
@@ -733,7 +735,7 @@ span {
         font-size: 1.5rem;
     }
     .home-img{
-       flex-wrap: wrap;
+        position: relative;
     }
     .social-icons a {
         width: 4rem;
@@ -816,7 +818,7 @@ span {
         font-size: 1.2rem;
     }
     .home-img{
-        position: absolute;
+        position: relative;
     }
     .social-icons a {
         width: 3.5rem;
