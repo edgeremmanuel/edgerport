@@ -96,10 +96,10 @@ span {
 .home-content h3 {
     margin-bottom: 1rem; /* Adjusted margin */
     margin-top: 0.5rem; /* Adjusted margin */
-    font-size: 2rem; /* Adjusted font size */
+    font-size: 1.5rem; /* Adjusted font size */
 }
 .home-content h1 {
-    font-size: 2rem; /* Adjusted font size */
+    font-size:  1.5; /* Adjusted font size */
     font-weight: 500;
     margin-top: 1rem; /* Adjusted margin */
     line-height: 1;
@@ -125,9 +125,9 @@ span {
     box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color), 0 0 100px var(--main-color);
 }
 .home-content p {
-    font-size: 1.5rem; /* Adjusted font size */
+    font-size: 1.1rem; /* Adjusted font size */
     font-weight: 500;
-    line-height: 1.8;
+    line-height: 1.5;
     max-width: 800px; /* Adjusted max-width */
 }
 .social-icons a {
@@ -185,8 +185,8 @@ span {
     color: black;
 }
 .text-animation {
-    font-size: 34px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 500;
     min-width: 280px;
 }
 .text-animation span {
