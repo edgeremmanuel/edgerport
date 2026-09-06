@@ -64,7 +64,7 @@ body {
     border-bottom: 3px solid var(--main-color);
 }
 #menu-icon {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     color: var(--main-color);
     display: none;
     cursor: pointer; /* Added cursor for better UX */
@@ -96,10 +96,10 @@ span {
 .home-content h3 {
     margin-bottom: 1rem; /* Adjusted margin */
     margin-top: 0.5rem; /* Adjusted margin */
-    font-size: 2.5rem; /* Adjusted font size */
+    font-size: 2rem; /* Adjusted font size */
 }
 .home-content h1 {
-    font-size: 4rem; /* Adjusted font size */
+    font-size: 2rem; /* Adjusted font size */
     font-weight: 700;
     margin-top: 1rem; /* Adjusted margin */
     line-height: 1;
@@ -400,7 +400,7 @@ span {
 }
 .service-info h4 {
     text-align: center;
-    font-size: 2.5rem; /* Adjusted font size */
+    font-size: 2rem; /* Adjusted font size */
     font-weight: 800;
     line-height: 1.5; /* Adjusted line height */
     margin-bottom: 1rem; /* Added margin for separation */
