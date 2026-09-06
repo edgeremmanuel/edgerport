@@ -39,7 +39,7 @@ body {
 .logo {
     font-size: 3rem; /* Adjusted for better scaling */
     color: var(--text-color);
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -51,7 +51,7 @@ body {
 }
 /* .header.img { size: 10px; } - This selector is problematic. If it's for an image within the header, it should be .header img */
 .navbar a {
-    font-size: 1.8rem; /* Adjusted for better scaling */
+    font-size: 1.4rem; /* Adjusted for better scaling */
     color: var(--text-color);
     margin-left: 3rem; /* Adjusted margin */
     font-weight: 500;
