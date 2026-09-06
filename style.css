@@ -64,7 +64,7 @@ body {
     border-bottom: 3px solid var(--main-color);
 }
 #menu-icon {
-    font-size: 3.2rem;
+    font-size: 2rem;
     color: var(--main-color);
     display: none;
     cursor: pointer; /* Added cursor for better UX */
@@ -100,7 +100,7 @@ span {
 }
 .home-content h1 {
     font-size: 2rem; /* Adjusted font size */
-    font-weight: 700;
+    font-weight: 500;
     margin-top: 1rem; /* Adjusted margin */
     line-height: 1;
 }
@@ -138,7 +138,7 @@ span {
     height: 4.5rem;
     background: transparent;
     border: 2px solid var(--main-color);
-    font-size: 2.5rem;
+    font-size: 2rem;
     border-radius: 50%;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
@@ -160,7 +160,7 @@ span {
     color: black;
     border: 2px solid transparent;
     letter-spacing: 0.1rem;
-    font-weight: 600;
+    font-weight: 500;
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
